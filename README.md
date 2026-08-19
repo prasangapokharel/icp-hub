@@ -5,14 +5,215 @@ Install like Go: `icp add pkg <name>`
 
 Hub: https://github.com/prasangapokharel/icp-hub
 
-## Quick start
+> **Note:** `hub/` is its own Git repo. The main icFrame project gitignores this folder.
+> Clone the hub separately: `git clone https://github.com/prasangapokharel/icp-hub.git`
+
+---
+
+## Quick start (install)
 
 ```bash
 icp p:list              # browse all packages
-icp add pkg wallet      # install
+icp add pkg wallet      # install to backend/pkg/
 icp a:p dao             # short alias
-icp p:ls                # installed packages
+icp p:ls                # installed in your project
 ```
+
+---
+
+## Create & publish a package
+
+### Step 1 — Write the Motoko module
+
+Create your package locally in any icFrame project:
+
+```
+backend/pkg/mypkg/mypkg.mo
+```
+
+```motoko
+import Text "mo:core/Text";
+
+module {
+  public func greet(name : Text) : Text {
+    "Hello, " # name;
+  };
+};
+```
+
+Rules:
+- One `module { }` per file
+- Use `mo:core/*` imports (not `mo:base`)
+- Keep files under 300 lines
+- No business logic — pure helpers only
+- Test with `icp b:test --local` after adding
+
+### Step 2 — Create the manifest
+
+In the same folder, add `icp.pkg.yaml`:
+
+```yaml
+name: mypkg
+version: 1.0.0
+description: One-line description of what it does
+maintainer: your-github-username
+install: pkg/mypkg
+files:
+  - mypkg.mo
+```
+
+| Field | Meaning |
+|---|---|
+| `name` | Package name (kebab-case, matches folder in hub) |
+| `version` | Semver (`1.0.0`) |
+| `install` | Where it installs in `backend/pkg/` |
+| `files` | `.mo` files to copy |
+
+### Step 3 — Push to hub (maintainers)
+
+```bash
+# from icFrame project root
+icp p:push mypkg
+```
+
+This copies `backend/pkg/mypkg/` into `hub/packages/mypkg/`.
+
+### Step 4 — Register in index.json
+
+Open `hub/index.json` and add:
+
+```json
+"mypkg": {
+  "version": "1.0.0",
+  "description": "One-line description",
+  "path": "packages/mypkg",
+  "import": "mo:pkg/mypkg/mypkg"
+}
+```
+
+### Step 5 — Commit and push hub
+
+```bash
+cd hub
+git add packages/mypkg/ index.json
+git commit -m "add pkg: mypkg"
+git push origin main
+```
+
+Users can install within minutes:
+
+```bash
+icp add pkg mypkg
+```
+
+---
+
+## Contribute via PR (external contributors)
+
+```bash
+# 1. Fork github.com/prasangapokharel/icp-hub
+git clone https://github.com/YOUR_USER/icp-hub.git
+cd icp-hub
+
+# 2. Create package
+mkdir -p packages/mypkg
+# add mypkg.mo + icp.pkg.yaml (see Step 1 & 2 above)
+
+# 3. Register in index.json
+
+# 4. Push and open PR
+git checkout -b add-mypkg
+git add packages/mypkg/ index.json
+git commit -m "add pkg: mypkg"
+git push origin add-mypkg
+# Open PR on GitHub
+```
+
+PR checklist:
+- [ ] `mypkg.mo` compiles with `mo:core` (moc 1.6+)
+- [ ] `icp.pkg.yaml` present with all fields
+- [ ] Entry added to `index.json`
+- [ ] No duplicate package name
+- [ ] File under 300 lines
+- [ ] Description is clear
+
+---
+
+## Hub folder & gitignore
+
+The `hub/` folder inside icFrame is **gitignored** in the main project because:
+
+| Reason | Detail |
+|---|---|
+| Separate repo | Hub lives at `github.com/prasangapokharel/icp-hub` |
+| No nested git | Avoids submodule conflicts in icFrame |
+| Clean clone | `git clone icFrame` stays small |
+| Hub devs work in hub repo | `git clone icp-hub` separately |
+
+**icFrame `.gitignore`:**
+```
+hub/
+```
+
+**To work on the hub:**
+```bash
+git clone https://github.com/prasangapokharel/icp-hub.git
+cd icp-hub
+# edit packages, index.json, push
+```
+
+**To sync hub into icFrame locally** (optional, for maintainers):
+```bash
+git clone https://github.com/prasangapokharel/icp-hub.git hub
+```
+
+---
+
+## Package structure reference
+
+```
+icp-hub/
+├── index.json              # registry — all packages listed here
+├── README.md               # this file
+└── packages/
+    └── mypkg/
+        ├── icp.pkg.yaml    # manifest
+        └── mypkg.mo        # Motoko module
+```
+
+After install in a project:
+
+```
+backend/
+├── pkg/
+│   └── mypkg/
+│       └── mypkg.mo        # installed by icp add pkg mypkg
+└── icp.pkg                 # lock file (committed in project)
+```
+
+Import in your canister:
+
+```motoko
+import Mypkg "mo:pkg/mypkg/mypkg";
+```
+
+---
+
+## Version bumps
+
+To release a new version:
+
+1. Update `version` in `icp.pkg.yaml`
+2. Update `version` in `index.json`
+3. Commit: `git commit -m "bump mypkg to 1.1.0"`
+4. Push: `git push origin main`
+
+Users reinstall with:
+```bash
+icp add pkg mypkg
+```
+
+---
 
 ## All packages
 
@@ -121,10 +322,3 @@ icp p:ls                # installed packages
 | dao | `mo:pkg/dao/dao` | Voting pattern |
 | upgrade | `mo:pkg/upgrade/upgrade` | Upgrade hooks |
 | cycles | `mo:pkg/cycles/cycles` | Cycles monitoring |
-
-## Contribute
-
-1. Fork this repo
-2. Add `packages/<name>/<name>.mo` + `icp.pkg.yaml`
-3. Register in `index.json`
-4. Open PR
