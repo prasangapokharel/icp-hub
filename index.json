@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "registry": "github.com/prasangapokharel/icp-hub",
+  "packages": {
+    "crud": {
+      "version": "1.0.0",
+      "description": "Generic Map CRUD helpers for mo:core",
+      "path": "packages/crud",
+      "import": "mo:pkg/crud/crud"
+    },
+    "rbac": {
+      "version": "1.0.0",
+      "description": "Role-based access control",
+      "path": "packages/rbac",
+      "import": "mo:pkg/rbac/rbac"
+    },
+    "errors": {
+      "version": "1.0.0",
+      "description": "ApiResult and HTTP-style error codes",
+      "path": "packages/errors",
+      "import": "mo:pkg/errors/result"
+    },
+    "caller": {
+      "version": "1.0.0",
+      "description": "Principal auth helpers",
+      "path": "packages/principal",
+      "import": "mo:pkg/principal/caller"
+    },
+    "validate-text": {
+      "version": "1.0.0",
+      "description": "Text input validation",
+      "path": "packages/validate-text",
+      "import": "mo:pkg/validate/text"
+    },
+    "validate-nat": {
+      "version": "1.0.0",
+      "description": "Nat validation helpers",
+      "path": "packages/validate-nat",
+      "import": "mo:pkg/validate/nat"
+    },
+    "pagination": {
+      "version": "1.0.0",
+      "description": "Page type and helpers",
+      "path": "packages/pagination",
+      "import": "mo:pkg/pagination/pg"
+    },
+    "time": {
+      "version": "1.0.0",
+      "description": "Timestamp helpers",
+      "path": "packages/time",
+      "import": "mo:pkg/time/now"
+    },
+    "uuid": {
+      "version": "1.0.0",
+      "description": "ID generation from Principal",
+      "path": "packages/id",
+      "import": "mo:pkg/id/uuid"
+    },
+    "slug": {
+      "version": "1.0.0",
+      "description": "Text slugify for URLs and keys",
+      "path": "packages/slug",
+      "import": "mo:pkg/slug/slug"
+    }
+  }
+}

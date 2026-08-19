@@ -1,0 +1,6 @@
+name: rbac
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/rbac
+files:
+  - rbac.mo

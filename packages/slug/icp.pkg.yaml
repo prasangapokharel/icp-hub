@@ -1,0 +1,7 @@
+name: slug
+version: 1.0.0
+description: Text slugify for URLs and stable keys
+maintainer: prasangapokharel
+install: pkg/slug
+files:
+  - slug.mo

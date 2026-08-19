@@ -1,0 +1,6 @@
+name: principal
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/principal
+files:
+  - caller.mo

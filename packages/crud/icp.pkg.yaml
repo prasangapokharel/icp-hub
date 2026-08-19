@@ -1,0 +1,6 @@
+name: crud
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/crud
+files:
+  - crud.mo

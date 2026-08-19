@@ -1,0 +1,6 @@
+name: errors
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/errors
+files:
+  - result.mo

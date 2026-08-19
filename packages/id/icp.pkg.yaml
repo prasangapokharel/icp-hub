@@ -1,0 +1,6 @@
+name: id
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/id
+files:
+  - uuid.mo
