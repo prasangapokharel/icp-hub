@@ -1,11 +1,11 @@
 # icp-hub — Motoko Package Registry
 
 **62 packages** for Internet Computer / Motoko development.
-Install like Go: `icp add pkg <name>`
+Install like Go: `falcon add pkg <name>`
 
 Hub: https://github.com/prasangapokharel/icp-hub
 
-> **Note:** `hub/` is its own Git repo. The main icFrame project gitignores this folder.
+> **Note:** `hub/` is its own Git repo. The main IcFalcon project gitignores this folder.
 > Clone the hub separately: `git clone https://github.com/prasangapokharel/icp-hub.git`
 
 ---
@@ -13,10 +13,10 @@ Hub: https://github.com/prasangapokharel/icp-hub
 ## Quick start (install)
 
 ```bash
-icp p:list              # browse all packages
-icp add pkg wallet      # install to backend/pkg/
-icp a:p dao             # short alias
-icp p:ls                # installed in your project
+falcon p:list              # browse all packages
+falcon add pkg wallet      # install to backend/pkg/
+falcon a:p dao             # short alias
+falcon p:ls                # installed in your project
 ```
 
 ---
@@ -25,7 +25,7 @@ icp p:ls                # installed in your project
 
 ### Step 1 — Write the Motoko module
 
-Create your package locally in any icFrame project:
+Create your package locally in any IcFalcon project:
 
 ```
 backend/pkg/mypkg/mypkg.mo
@@ -46,7 +46,7 @@ Rules:
 - Use `mo:core/*` imports (not `mo:base`)
 - Keep files under 300 lines
 - No business logic — pure helpers only
-- Test with `icp b:test --local` after adding
+- Test with `falcon b:test --local` after adding
 
 ### Step 2 — Create the manifest
 
@@ -72,8 +72,8 @@ files:
 ### Step 3 — Push to hub (maintainers)
 
 ```bash
-# from icFrame project root
-icp p:push mypkg
+# from IcFalcon project root
+falcon p:push mypkg
 ```
 
 This copies `backend/pkg/mypkg/` into `hub/packages/mypkg/`.
@@ -103,7 +103,7 @@ git push origin main
 Users can install within minutes:
 
 ```bash
-icp add pkg mypkg
+falcon add pkg mypkg
 ```
 
 ---
@@ -141,16 +141,16 @@ PR checklist:
 
 ## Hub folder & gitignore
 
-The `hub/` folder inside icFrame is **gitignored** in the main project because:
+The `hub/` folder inside IcFalcon is **gitignored** in the main project because:
 
 | Reason | Detail |
 |---|---|
 | Separate repo | Hub lives at `github.com/prasangapokharel/icp-hub` |
-| No nested git | Avoids submodule conflicts in icFrame |
-| Clean clone | `git clone icFrame` stays small |
+| No nested git | Avoids submodule conflicts in IcFalcon |
+| Clean clone | `git clone IcFalcon` stays small |
 | Hub devs work in hub repo | `git clone icp-hub` separately |
 
-**icFrame `.gitignore`:**
+**IcFalcon `.gitignore`:**
 ```
 hub/
 ```
@@ -162,7 +162,7 @@ cd icp-hub
 # edit packages, index.json, push
 ```
 
-**To sync hub into icFrame locally** (optional, for maintainers):
+**To sync hub into IcFalcon locally** (optional, for maintainers):
 ```bash
 git clone https://github.com/prasangapokharel/icp-hub.git hub
 ```
@@ -187,7 +187,7 @@ After install in a project:
 backend/
 ├── pkg/
 │   └── mypkg/
-│       └── mypkg.mo        # installed by icp add pkg mypkg
+│       └── mypkg.mo        # installed by falcon add pkg mypkg
 └── icp.pkg                 # lock file (committed in project)
 ```
 
@@ -210,7 +210,7 @@ To release a new version:
 
 Users reinstall with:
 ```bash
-icp add pkg mypkg
+falcon add pkg mypkg
 ```
 
 ---
