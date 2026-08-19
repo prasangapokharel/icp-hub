@@ -1,0 +1,6 @@
+name: nft
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/nft
+files:
+  - nft.mo

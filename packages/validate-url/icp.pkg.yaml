@@ -1,0 +1,6 @@
+name: validate-url
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/validate
+files:
+  - url.mo

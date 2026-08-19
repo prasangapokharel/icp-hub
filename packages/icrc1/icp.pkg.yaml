@@ -1,0 +1,6 @@
+name: icrc1
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/icrc1
+files:
+  - icrc1.mo

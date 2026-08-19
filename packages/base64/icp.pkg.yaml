@@ -1,0 +1,6 @@
+name: base64
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/base64
+files:
+  - base64.mo

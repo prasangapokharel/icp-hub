@@ -1,0 +1,6 @@
+name: http
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/http
+files:
+  - http.mo

@@ -1,0 +1,6 @@
+name: candid-utils
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/candid-utils
+files:
+  - utils.mo

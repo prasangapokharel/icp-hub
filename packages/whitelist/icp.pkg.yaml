@@ -1,0 +1,6 @@
+name: whitelist
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/whitelist
+files:
+  - whitelist.mo

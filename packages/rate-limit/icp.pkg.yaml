@@ -1,0 +1,6 @@
+name: rate-limit
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/rate-limit
+files:
+  - limit.mo

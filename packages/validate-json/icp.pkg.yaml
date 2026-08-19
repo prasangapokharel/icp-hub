@@ -1,0 +1,6 @@
+name: validate-json
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/validate
+files:
+  - json.mo

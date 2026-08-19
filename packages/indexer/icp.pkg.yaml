@@ -1,0 +1,6 @@
+name: indexer
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/indexer
+files:
+  - indexer.mo

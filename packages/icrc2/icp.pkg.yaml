@@ -1,0 +1,6 @@
+name: icrc2
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/icrc2
+files:
+  - icrc2.mo

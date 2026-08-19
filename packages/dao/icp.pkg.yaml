@@ -1,0 +1,6 @@
+name: dao
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/dao
+files:
+  - dao.mo

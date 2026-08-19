@@ -1,0 +1,6 @@
+name: retry
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/retry
+files:
+  - retry.mo

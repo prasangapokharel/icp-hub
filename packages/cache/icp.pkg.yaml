@@ -1,0 +1,6 @@
+name: cache
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/cache
+files:
+  - cache.mo

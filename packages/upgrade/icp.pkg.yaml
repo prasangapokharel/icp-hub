@@ -1,0 +1,6 @@
+name: upgrade
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/upgrade
+files:
+  - upgrade.mo

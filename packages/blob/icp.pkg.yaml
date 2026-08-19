@@ -1,0 +1,6 @@
+name: blob
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/blob
+files:
+  - blob.mo

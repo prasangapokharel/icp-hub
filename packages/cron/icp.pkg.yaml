@@ -1,0 +1,6 @@
+name: cron
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/cron
+files:
+  - cron.mo

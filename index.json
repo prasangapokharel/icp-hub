@@ -61,6 +61,318 @@
       "description": "Text slugify for URLs and keys",
       "path": "packages/slug",
       "import": "mo:pkg/slug/slug"
+    },
+    "storage": {
+      "version": "1.0.0",
+      "description": "Generic stable Map store wrappers",
+      "path": "packages/storage",
+      "import": "mo:pkg/storage/storage"
+    },
+    "cache": {
+      "version": "1.0.0",
+      "description": "TTL in-memory cache",
+      "path": "packages/cache",
+      "import": "mo:pkg/cache/cache"
+    },
+    "search": {
+      "version": "1.0.0",
+      "description": "Text search helpers",
+      "path": "packages/search",
+      "import": "mo:pkg/search/search"
+    },
+    "sort": {
+      "version": "1.0.0",
+      "description": "Generic sorting helpers",
+      "path": "packages/sort",
+      "import": "mo:pkg/sort/sort"
+    },
+    "filter": {
+      "version": "1.0.0",
+      "description": "Collection filter builder",
+      "path": "packages/filter",
+      "import": "mo:pkg/filter/filter"
+    },
+    "indexer": {
+      "version": "1.0.0",
+      "description": "Secondary index for maps",
+      "path": "packages/indexer",
+      "import": "mo:pkg/indexer/indexer"
+    },
+    "migration": {
+      "version": "1.0.0",
+      "description": "Upgrade migration helpers",
+      "path": "packages/migration",
+      "import": "mo:pkg/migration/migration"
+    },
+    "session": {
+      "version": "1.0.0",
+      "description": "Session token store",
+      "path": "packages/session",
+      "import": "mo:pkg/session/session"
+    },
+    "rate-limit": {
+      "version": "1.0.0",
+      "description": "Per-principal rate limiting",
+      "path": "packages/rate-limit",
+      "import": "mo:pkg/rate-limit/limit"
+    },
+    "multisig": {
+      "version": "1.0.0",
+      "description": "Multi-approver action pattern",
+      "path": "packages/multisig",
+      "import": "mo:pkg/multisig/multisig"
+    },
+    "whitelist": {
+      "version": "1.0.0",
+      "description": "Allow/deny list management",
+      "path": "packages/whitelist",
+      "import": "mo:pkg/whitelist/whitelist"
+    },
+    "api-key": {
+      "version": "1.0.0",
+      "description": "API key validation",
+      "path": "packages/api-key",
+      "import": "mo:pkg/api-key/apikey"
+    },
+    "retry": {
+      "version": "1.0.0",
+      "description": "Retry with backoff",
+      "path": "packages/retry",
+      "import": "mo:pkg/retry/retry"
+    },
+    "circuit-breaker": {
+      "version": "1.0.0",
+      "description": "Failure isolation pattern",
+      "path": "packages/circuit-breaker",
+      "import": "mo:pkg/circuit-breaker/breaker"
+    },
+    "validate-email": {
+      "version": "1.0.0",
+      "description": "Email format validation",
+      "path": "packages/validate-email",
+      "import": "mo:pkg/validate/email"
+    },
+    "validate-url": {
+      "version": "1.0.0",
+      "description": "URL format validation",
+      "path": "packages/validate-url",
+      "import": "mo:pkg/validate/url"
+    },
+    "validate-json": {
+      "version": "1.0.0",
+      "description": "JSON string validation",
+      "path": "packages/validate-json",
+      "import": "mo:pkg/validate/json"
+    },
+    "validate-principal": {
+      "version": "1.0.0",
+      "description": "Principal format checks",
+      "path": "packages/validate-principal",
+      "import": "mo:pkg/validate/principal"
+    },
+    "sanitize": {
+      "version": "1.0.0",
+      "description": "Input sanitization",
+      "path": "packages/sanitize",
+      "import": "mo:pkg/sanitize/sanitize"
+    },
+    "nanoid": {
+      "version": "1.0.0",
+      "description": "Short unique IDs",
+      "path": "packages/nanoid",
+      "import": "mo:pkg/nanoid/nanoid"
+    },
+    "date": {
+      "version": "1.0.0",
+      "description": "Date formatting helpers",
+      "path": "packages/date",
+      "import": "mo:pkg/date/date"
+    },
+    "cron": {
+      "version": "1.0.0",
+      "description": "Scheduled task pattern",
+      "path": "packages/cron",
+      "import": "mo:pkg/cron/cron"
+    },
+    "icrc1": {
+      "version": "1.0.0",
+      "description": "ICRC-1 token helpers",
+      "path": "packages/icrc1",
+      "import": "mo:pkg/icrc1/icrc1"
+    },
+    "icrc2": {
+      "version": "1.0.0",
+      "description": "ICRC-2 approve helpers",
+      "path": "packages/icrc2",
+      "import": "mo:pkg/icrc2/icrc2"
+    },
+    "ledger": {
+      "version": "1.0.0",
+      "description": "ICP ledger helpers",
+      "path": "packages/ledger",
+      "import": "mo:pkg/ledger/ledger"
+    },
+    "escrow": {
+      "version": "1.0.0",
+      "description": "Hold/release payment pattern",
+      "path": "packages/escrow",
+      "import": "mo:pkg/escrow/escrow"
+    },
+    "wallet": {
+      "version": "1.0.0",
+      "description": "Balance tracking helpers",
+      "path": "packages/wallet",
+      "import": "mo:pkg/wallet/wallet"
+    },
+    "nft": {
+      "version": "1.0.0",
+      "description": "ICRC-7 NFT helpers",
+      "path": "packages/nft",
+      "import": "mo:pkg/nft/nft"
+    },
+    "http": {
+      "version": "1.0.0",
+      "description": "HTTP outcall helpers",
+      "path": "packages/http",
+      "import": "mo:pkg/http/http"
+    },
+    "canister-call": {
+      "version": "1.0.0",
+      "description": "Inter-canister call wrapper",
+      "path": "packages/canister-call",
+      "import": "mo:pkg/canister-call/call"
+    },
+    "webhook": {
+      "version": "1.0.0",
+      "description": "Outbound event dispatch",
+      "path": "packages/webhook",
+      "import": "mo:pkg/webhook/webhook"
+    },
+    "json": {
+      "version": "1.0.0",
+      "description": "JSON encode helpers",
+      "path": "packages/json",
+      "import": "mo:pkg/json/json"
+    },
+    "csv": {
+      "version": "1.0.0",
+      "description": "CSV parse/generate",
+      "path": "packages/csv",
+      "import": "mo:pkg/csv/csv"
+    },
+    "base64": {
+      "version": "1.0.0",
+      "description": "Hex encoding helpers",
+      "path": "packages/base64",
+      "import": "mo:pkg/base64/base64"
+    },
+    "candid-utils": {
+      "version": "1.0.0",
+      "description": "Candid conversion helpers",
+      "path": "packages/candid-utils",
+      "import": "mo:pkg/candid-utils/utils"
+    },
+    "array": {
+      "version": "1.0.0",
+      "description": "Array utilities",
+      "path": "packages/array",
+      "import": "mo:pkg/array/array"
+    },
+    "list": {
+      "version": "1.0.0",
+      "description": "List utilities",
+      "path": "packages/list",
+      "import": "mo:pkg/list/list"
+    },
+    "math": {
+      "version": "1.0.0",
+      "description": "Math helpers",
+      "path": "packages/math",
+      "import": "mo:pkg/math/math"
+    },
+    "string": {
+      "version": "1.0.0",
+      "description": "String manipulation",
+      "path": "packages/string",
+      "import": "mo:pkg/string/string"
+    },
+    "random": {
+      "version": "1.0.0",
+      "description": "Random helpers",
+      "path": "packages/random",
+      "import": "mo:pkg/random/random"
+    },
+    "logger": {
+      "version": "1.0.0",
+      "description": "Structured logging",
+      "path": "packages/logger",
+      "import": "mo:pkg/logger/logger"
+    },
+    "env": {
+      "version": "1.0.0",
+      "description": "Canister config pattern",
+      "path": "packages/env",
+      "import": "mo:pkg/env/env"
+    },
+    "feature-flag": {
+      "version": "1.0.0",
+      "description": "Feature toggles",
+      "path": "packages/feature-flag",
+      "import": "mo:pkg/feature-flag/flag"
+    },
+    "asset": {
+      "version": "1.0.0",
+      "description": "Asset canister helpers",
+      "path": "packages/asset",
+      "import": "mo:pkg/asset/asset"
+    },
+    "blob": {
+      "version": "1.0.0",
+      "description": "Blob chunking",
+      "path": "packages/blob",
+      "import": "mo:pkg/blob/blob"
+    },
+    "upload": {
+      "version": "1.0.0",
+      "description": "File upload pattern",
+      "path": "packages/upload",
+      "import": "mo:pkg/upload/upload"
+    },
+    "test": {
+      "version": "1.0.0",
+      "description": "Test assertion helpers",
+      "path": "packages/test",
+      "import": "mo:pkg/test/test"
+    },
+    "mock": {
+      "version": "1.0.0",
+      "description": "Mock data generators",
+      "path": "packages/mock",
+      "import": "mo:pkg/mock/mock"
+    },
+    "seed": {
+      "version": "1.0.0",
+      "description": "DB seeding helpers",
+      "path": "packages/seed",
+      "import": "mo:pkg/seed/seed"
+    },
+    "dao": {
+      "version": "1.0.0",
+      "description": "Proposal/voting pattern",
+      "path": "packages/dao",
+      "import": "mo:pkg/dao/dao"
+    },
+    "upgrade": {
+      "version": "1.0.0",
+      "description": "Pre/post upgrade helpers",
+      "path": "packages/upgrade",
+      "import": "mo:pkg/upgrade/upgrade"
+    },
+    "cycles": {
+      "version": "1.0.0",
+      "description": "Cycles monitoring helpers",
+      "path": "packages/cycles",
+      "import": "mo:pkg/cycles/cycles"
     }
   }
 }

@@ -1,0 +1,6 @@
+name: math
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/math
+files:
+  - math.mo

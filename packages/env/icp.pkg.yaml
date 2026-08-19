@@ -1,0 +1,6 @@
+name: env
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/env
+files:
+  - env.mo

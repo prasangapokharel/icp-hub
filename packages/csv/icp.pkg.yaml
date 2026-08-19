@@ -1,0 +1,6 @@
+name: csv
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/csv
+files:
+  - csv.mo

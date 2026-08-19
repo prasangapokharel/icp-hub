@@ -1,0 +1,6 @@
+name: upload
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/upload
+files:
+  - upload.mo

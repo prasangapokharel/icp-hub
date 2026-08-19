@@ -1,0 +1,6 @@
+name: validate-email
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/validate
+files:
+  - email.mo

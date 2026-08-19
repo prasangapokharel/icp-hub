@@ -1,0 +1,6 @@
+name: circuit-breaker
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/circuit-breaker
+files:
+  - breaker.mo

@@ -1,0 +1,6 @@
+name: logger
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/logger
+files:
+  - logger.mo

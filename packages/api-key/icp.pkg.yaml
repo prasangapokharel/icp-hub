@@ -1,0 +1,6 @@
+name: api-key
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/api-key
+files:
+  - apikey.mo

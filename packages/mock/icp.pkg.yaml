@@ -1,0 +1,6 @@
+name: mock
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/mock
+files:
+  - mock.mo

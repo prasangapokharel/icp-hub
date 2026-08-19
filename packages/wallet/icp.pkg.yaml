@@ -1,0 +1,6 @@
+name: wallet
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/wallet
+files:
+  - wallet.mo

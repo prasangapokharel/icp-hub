@@ -1,0 +1,6 @@
+name: sort
+version: 1.0.0
+maintainer: prasangapokharel
+install: pkg/sort
+files:
+  - sort.mo
