@@ -1,0 +1,8 @@
+name: subaccount
+version: 1.0.0
+description: Deterministic 32-byte ICRC subaccount derivation
+maintainer: prasangapokharel
+tier: L2
+install: pkg/subaccount
+files:
+  - subaccount.mo

@@ -1,7 +1,8 @@
 name: ckbtc
-version: 1.0.0
-description: ckBTC satoshi conversion and address validation
+version: 2.0.0
+description: ckBTC token ref, satoshi math, and address validation
 maintainer: prasangapokharel
+tier: L2
 install: pkg/ckbtc
 files:
   - ckbtc.mo

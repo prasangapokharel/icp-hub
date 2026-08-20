@@ -1,6 +1,8 @@
 name: icrc1
-version: 1.0.0
+version: 2.0.0
+description: ICRC-1 transfer types, builders, and LedgerActor type
 maintainer: prasangapokharel
+tier: L2
 install: pkg/icrc1
 files:
   - icrc1.mo

@@ -1,6 +1,8 @@
 name: ledger
-version: 1.0.0
+version: 2.0.0
+description: ICP ledger helpers, TokenRef, and account identifiers
 maintainer: prasangapokharel
+tier: L2
 install: pkg/ledger
 files:
   - ledger.mo

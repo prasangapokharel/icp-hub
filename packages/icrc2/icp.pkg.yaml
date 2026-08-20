@@ -1,6 +1,8 @@
 name: icrc2
-version: 1.0.0
+version: 2.0.0
+description: ICRC-2 approve and transfer_from builders
 maintainer: prasangapokharel
+tier: L2
 install: pkg/icrc2
 files:
   - icrc2.mo

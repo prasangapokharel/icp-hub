@@ -195,22 +195,25 @@
       "import": "mo:pkg/cron/cron"
     },
     "icrc1": {
-      "version": "1.0.0",
-      "description": "ICRC-1 token helpers",
+      "version": "2.0.0",
+      "description": "ICRC-1 transfer types, builders, and LedgerActor type",
       "path": "packages/icrc1",
-      "import": "mo:pkg/icrc1/icrc1"
+      "import": "mo:pkg/icrc1/icrc1",
+      "tier": "L2"
     },
     "icrc2": {
-      "version": "1.0.0",
-      "description": "ICRC-2 approve helpers",
+      "version": "2.0.0",
+      "description": "ICRC-2 approve and transfer_from builders",
       "path": "packages/icrc2",
-      "import": "mo:pkg/icrc2/icrc2"
+      "import": "mo:pkg/icrc2/icrc2",
+      "tier": "L2"
     },
     "ledger": {
-      "version": "1.0.0",
-      "description": "ICP ledger helpers",
+      "version": "2.0.0",
+      "description": "ICP ledger helpers, TokenRef, and account identifiers",
       "path": "packages/ledger",
-      "import": "mo:pkg/ledger/ledger"
+      "import": "mo:pkg/ledger/ledger",
+      "tier": "L2"
     },
     "escrow": {
       "version": "1.0.0",
@@ -219,10 +222,32 @@
       "import": "mo:pkg/escrow/escrow"
     },
     "wallet": {
-      "version": "1.0.0",
-      "description": "Balance tracking helpers",
+      "version": "2.0.0",
+      "description": "Custodial wallet account derivation and deposit addresses",
       "path": "packages/wallet",
-      "import": "mo:pkg/wallet/wallet"
+      "import": "mo:pkg/wallet/wallet",
+      "tier": "L2"
+    },
+    "subaccount": {
+      "version": "1.0.0",
+      "description": "Deterministic 32-byte ICRC subaccount derivation",
+      "path": "packages/subaccount",
+      "import": "mo:pkg/subaccount/subaccount",
+      "tier": "L2"
+    },
+    "transaction": {
+      "version": "1.0.0",
+      "description": "Transaction record types and map helpers",
+      "path": "packages/transaction",
+      "import": "mo:pkg/transaction/transaction",
+      "tier": "L2"
+    },
+    "transfer": {
+      "version": "1.0.0",
+      "description": "ICRC transfer args builder, validation, and tx record helpers",
+      "path": "packages/transfer",
+      "import": "mo:pkg/transfer/transfer",
+      "tier": "L2"
     },
     "nft": {
       "version": "1.0.0",
@@ -549,10 +574,11 @@
       "import": "mo:pkg/vetkeys/vetkeys"
     },
     "ckbtc": {
-      "version": "1.0.0",
-      "description": "ckBTC satoshi conversion and address validation",
+      "version": "2.0.0",
+      "description": "ckBTC token ref, satoshi math, and address validation",
       "path": "packages/ckbtc",
-      "import": "mo:pkg/ckbtc/ckbtc"
+      "import": "mo:pkg/ckbtc/ckbtc",
+      "tier": "L2"
     }
   }
 }

@@ -1,0 +1,8 @@
+name: transfer
+version: 1.0.0
+description: ICRC transfer args builder, validation, and tx record helpers
+maintainer: prasangapokharel
+tier: L2
+install: pkg/transfer
+files:
+  - transfer.mo

@@ -1,0 +1,8 @@
+name: transaction
+version: 1.0.0
+description: Transaction record types and map helpers
+maintainer: prasangapokharel
+tier: L2
+install: pkg/transaction
+files:
+  - transaction.mo
