@@ -1,0 +1,7 @@
+name: email-verify
+version: 1.0.0
+description: Email verification token and link helpers
+maintainer: prasangapokharel
+install: pkg/email-verify
+files:
+  - email-verify.mo

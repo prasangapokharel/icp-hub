@@ -1,0 +1,7 @@
+name: google-oauth
+version: 1.0.0
+description: Google OAuth2 PKCE URL and token exchange helpers
+maintainer: prasangapokharel
+install: pkg/google-oauth
+files:
+  - google-oauth.mo

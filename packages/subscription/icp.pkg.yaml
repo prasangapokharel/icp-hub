@@ -1,0 +1,7 @@
+name: subscription
+version: 1.0.0
+description: Subscription plan and renewal helpers
+maintainer: prasangapokharel
+install: pkg/subscription
+files:
+  - subscription.mo

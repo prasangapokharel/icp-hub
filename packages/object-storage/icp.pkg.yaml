@@ -1,0 +1,7 @@
+name: object-storage
+version: 1.0.0
+description: ExternalBlob type alias and file metadata validation
+maintainer: prasangapokharel
+install: pkg/object-storage
+files:
+  - object-storage.mo

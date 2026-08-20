@@ -1,0 +1,7 @@
+name: vetkeys
+version: 1.0.0
+description: vetKD encrypt/decrypt request types and validation
+maintainer: prasangapokharel
+install: pkg/vetkeys
+files:
+  - vetkeys.mo

@@ -1,0 +1,7 @@
+name: stripe
+version: 1.0.0
+description: Stripe checkout session types and validation
+maintainer: prasangapokharel
+install: pkg/stripe
+files:
+  - stripe.mo

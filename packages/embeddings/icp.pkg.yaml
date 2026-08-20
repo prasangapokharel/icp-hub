@@ -1,0 +1,7 @@
+name: embeddings
+version: 1.0.0
+description: Vector cosine similarity and dimension validation
+maintainer: prasangapokharel
+install: pkg/embeddings
+files:
+  - embeddings.mo

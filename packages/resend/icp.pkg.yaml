@@ -1,0 +1,7 @@
+name: resend
+version: 1.0.0
+description: Resend API payload and auth helpers
+maintainer: prasangapokharel
+install: pkg/resend
+files:
+  - resend.mo

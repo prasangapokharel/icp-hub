@@ -1,0 +1,7 @@
+name: image-meta
+version: 1.0.0
+description: MIME sniff from bytes and upload size validation
+maintainer: prasangapokharel
+install: pkg/image-meta
+files:
+  - image-meta.mo

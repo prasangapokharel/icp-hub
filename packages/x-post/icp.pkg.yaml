@@ -1,0 +1,7 @@
+name: x-post
+version: 1.0.0
+description: X Twitter post API config and tweet validation
+maintainer: prasangapokharel
+install: pkg/x-post
+files:
+  - x-post.mo

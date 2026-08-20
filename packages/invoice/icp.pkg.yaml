@@ -1,0 +1,7 @@
+name: invoice
+version: 1.0.0
+description: Invoice line items and total calculation
+maintainer: prasangapokharel
+install: pkg/invoice
+files:
+  - invoice.mo

@@ -1,0 +1,7 @@
+name: llm-router
+version: 1.0.0
+description: LLM provider enum and token estimate helpers
+maintainer: prasangapokharel
+install: pkg/llm-router
+files:
+  - llm-router.mo

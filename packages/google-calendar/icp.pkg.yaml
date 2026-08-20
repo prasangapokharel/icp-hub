@@ -1,0 +1,7 @@
+name: google-calendar
+version: 1.0.0
+description: Google Calendar API URL and event body helpers
+maintainer: prasangapokharel
+install: pkg/google-calendar
+files:
+  - google-calendar.mo

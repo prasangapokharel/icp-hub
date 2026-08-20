@@ -1,0 +1,7 @@
+name: google-mail
+version: 1.0.0
+description: Gmail API URL and raw MIME message helpers
+maintainer: prasangapokharel
+install: pkg/google-mail
+files:
+  - google-mail.mo

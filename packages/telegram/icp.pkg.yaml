@@ -1,0 +1,7 @@
+name: telegram
+version: 1.0.0
+description: Telegram Bot API sendMessage helpers
+maintainer: prasangapokharel
+install: pkg/telegram
+files:
+  - telegram.mo

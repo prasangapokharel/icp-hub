@@ -1,6 +1,6 @@
 # icp-hub — Motoko Package Registry
 
-**62 packages** for Internet Computer / Motoko development.
+**92 packages** for Internet Computer / Motoko development.
 Install like Go: `falcon add pkg <name>`
 
 Hub: https://github.com/prasangapokharel/icp-hub
@@ -312,6 +312,60 @@ falcon add pkg mypkg
 | asset | `mo:pkg/asset/asset` | Asset helpers |
 | blob | `mo:pkg/blob/blob` | Blob chunking |
 | upload | `mo:pkg/upload/upload` | Upload pattern |
+| object-storage | `mo:pkg/object-storage/object-storage` | ExternalBlob refs and file meta |
+| ipfs | `mo:pkg/ipfs/ipfs` | IPFS CID and gateway URLs |
+| image-meta | `mo:pkg/image-meta/image-meta` | MIME sniff and size limits |
+
+### Email
+| Package | Import | Description |
+|---|---|---|
+| email | `mo:pkg/email/email` | Transactional email types |
+| email-verify | `mo:pkg/email-verify/email-verify` | Verification tokens and links |
+| email-template | `mo:pkg/email-template/email-template` | Placeholder render and HTML escape |
+| sendgrid | `mo:pkg/sendgrid/sendgrid` | SendGrid API payloads |
+| resend | `mo:pkg/resend/resend` | Resend API payloads |
+
+### AI / LLM
+| Package | Import | Description |
+|---|---|---|
+| openai | `mo:pkg/openai/openai` | OpenAI chat and embeddings config |
+| anthropic | `mo:pkg/anthropic/anthropic` | Claude API config |
+| gemini | `mo:pkg/gemini/gemini` | Google Gemini API helpers |
+| embeddings | `mo:pkg/embeddings/embeddings` | Vector similarity |
+| llm-router | `mo:pkg/llm-router/llm-router` | Provider enum and token estimate |
+
+### Payments
+| Package | Import | Description |
+|---|---|---|
+| stripe | `mo:pkg/stripe/stripe` | Stripe checkout types |
+| paypal | `mo:pkg/paypal/paypal` | PayPal order types |
+| invoice | `mo:pkg/invoice/invoice` | Invoice totals |
+| subscription | `mo:pkg/subscription/subscription` | Plan renewal helpers |
+
+### Connectors
+| Package | Import | Description |
+|---|---|---|
+| slack | `mo:pkg/slack/slack` | Slack post message |
+| discord | `mo:pkg/discord/discord` | Discord webhooks |
+| telegram | `mo:pkg/telegram/telegram` | Telegram bot API |
+| x-post | `mo:pkg/x-post/x-post` | X tweet posting |
+| whatsapp | `mo:pkg/whatsapp/whatsapp` | WhatsApp templates |
+| google-oauth | `mo:pkg/google-oauth/google-oauth` | Google OAuth2 PKCE |
+| google-mail | `mo:pkg/google-mail/google-mail` | Gmail API helpers |
+| google-calendar | `mo:pkg/google-calendar/google-calendar` | Calendar API helpers |
+
+### HTTP & Security
+| Package | Import | Description |
+|---|---|---|
+| http-outcall | `mo:pkg/http-outcall/http-outcall` | Outcall request types and limits |
+| webhook-verify | `mo:pkg/webhook-verify/webhook-verify` | Signature verification |
+| oauth2 | `mo:pkg/oauth2/oauth2` | Generic OAuth2 helpers |
+
+### ICP Native
+| Package | Import | Description |
+|---|---|---|
+| vetkeys | `mo:pkg/vetkeys/vetkeys` | vetKD request types |
+| ckbtc | `mo:pkg/ckbtc/ckbtc` | ckBTC satoshi conversion |
 
 ### Testing & Governance
 | Package | Import | Description |
