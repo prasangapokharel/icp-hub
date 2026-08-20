@@ -1,0 +1,7 @@
+name: ipfs
+version: 1.0.0
+description: IPFS CID validation and gateway URL builder
+maintainer: prasangapokharel
+install: pkg/ipfs
+files:
+  - ipfs.mo

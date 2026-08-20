@@ -1,0 +1,7 @@
+name: email-template
+version: 1.0.0
+description: Email placeholder render and HTML escape
+maintainer: prasangapokharel
+install: pkg/email-template
+files:
+  - email-template.mo

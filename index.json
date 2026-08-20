@@ -373,6 +373,186 @@
       "description": "Cycles monitoring helpers",
       "path": "packages/cycles",
       "import": "mo:pkg/cycles/cycles"
+    },
+    "email": {
+      "version": "1.0.0",
+      "description": "Transactional email types and message validation",
+      "path": "packages/email",
+      "import": "mo:pkg/email/email"
+    },
+    "email-verify": {
+      "version": "1.0.0",
+      "description": "Email verification token and link helpers",
+      "path": "packages/email-verify",
+      "import": "mo:pkg/email-verify/email-verify"
+    },
+    "email-template": {
+      "version": "1.0.0",
+      "description": "Email placeholder render and HTML escape",
+      "path": "packages/email-template",
+      "import": "mo:pkg/email-template/email-template"
+    },
+    "sendgrid": {
+      "version": "1.0.0",
+      "description": "SendGrid API payload and auth helpers",
+      "path": "packages/sendgrid",
+      "import": "mo:pkg/sendgrid/sendgrid"
+    },
+    "resend": {
+      "version": "1.0.0",
+      "description": "Resend API payload and auth helpers",
+      "path": "packages/resend",
+      "import": "mo:pkg/resend/resend"
+    },
+    "openai": {
+      "version": "1.0.0",
+      "description": "OpenAI API config, chat types, and JSON body builders",
+      "path": "packages/openai",
+      "import": "mo:pkg/openai/openai"
+    },
+    "anthropic": {
+      "version": "1.0.0",
+      "description": "Anthropic Claude API config and message body builders",
+      "path": "packages/anthropic",
+      "import": "mo:pkg/anthropic/anthropic"
+    },
+    "gemini": {
+      "version": "1.0.0",
+      "description": "Google Gemini API URL and prompt body helpers",
+      "path": "packages/gemini",
+      "import": "mo:pkg/gemini/gemini"
+    },
+    "embeddings": {
+      "version": "1.0.0",
+      "description": "Vector cosine similarity and dimension validation",
+      "path": "packages/embeddings",
+      "import": "mo:pkg/embeddings/embeddings"
+    },
+    "llm-router": {
+      "version": "1.0.0",
+      "description": "LLM provider enum and token estimate helpers",
+      "path": "packages/llm-router",
+      "import": "mo:pkg/llm-router/llm-router"
+    },
+    "stripe": {
+      "version": "1.0.0",
+      "description": "Stripe checkout session types and validation",
+      "path": "packages/stripe",
+      "import": "mo:pkg/stripe/stripe"
+    },
+    "paypal": {
+      "version": "1.0.0",
+      "description": "PayPal order types and validation helpers",
+      "path": "packages/paypal",
+      "import": "mo:pkg/paypal/paypal"
+    },
+    "invoice": {
+      "version": "1.0.0",
+      "description": "Invoice line items and total calculation",
+      "path": "packages/invoice",
+      "import": "mo:pkg/invoice/invoice"
+    },
+    "subscription": {
+      "version": "1.0.0",
+      "description": "Subscription plan and renewal helpers",
+      "path": "packages/subscription",
+      "import": "mo:pkg/subscription/subscription"
+    },
+    "slack": {
+      "version": "1.0.0",
+      "description": "Slack chat.postMessage config and form body helpers",
+      "path": "packages/slack",
+      "import": "mo:pkg/slack/slack"
+    },
+    "discord": {
+      "version": "1.0.0",
+      "description": "Discord webhook URL validation and embed payload builder",
+      "path": "packages/discord",
+      "import": "mo:pkg/discord/discord"
+    },
+    "telegram": {
+      "version": "1.0.0",
+      "description": "Telegram Bot API sendMessage helpers",
+      "path": "packages/telegram",
+      "import": "mo:pkg/telegram/telegram"
+    },
+    "x-post": {
+      "version": "1.0.0",
+      "description": "X Twitter post API config and tweet validation",
+      "path": "packages/x-post",
+      "import": "mo:pkg/x-post/x-post"
+    },
+    "whatsapp": {
+      "version": "1.0.0",
+      "description": "WhatsApp Business template message payload builder",
+      "path": "packages/whatsapp",
+      "import": "mo:pkg/whatsapp/whatsapp"
+    },
+    "google-oauth": {
+      "version": "1.0.0",
+      "description": "Google OAuth2 PKCE URL and token exchange helpers",
+      "path": "packages/google-oauth",
+      "import": "mo:pkg/google-oauth/google-oauth"
+    },
+    "google-mail": {
+      "version": "1.0.0",
+      "description": "Gmail API URL and raw MIME message helpers",
+      "path": "packages/google-mail",
+      "import": "mo:pkg/google-mail/google-mail"
+    },
+    "google-calendar": {
+      "version": "1.0.0",
+      "description": "Google Calendar API URL and event body helpers",
+      "path": "packages/google-calendar",
+      "import": "mo:pkg/google-calendar/google-calendar"
+    },
+    "http-outcall": {
+      "version": "1.0.0",
+      "description": "HTTP outcall request types, headers, and size limits",
+      "path": "packages/http-outcall",
+      "import": "mo:pkg/http-outcall/http-outcall"
+    },
+    "webhook-verify": {
+      "version": "1.0.0",
+      "description": "Webhook signature header names and timing-safe compare",
+      "path": "packages/webhook-verify",
+      "import": "mo:pkg/webhook-verify/webhook-verify"
+    },
+    "oauth2": {
+      "version": "1.0.0",
+      "description": "Generic OAuth2 grant types and redirect URI helpers",
+      "path": "packages/oauth2",
+      "import": "mo:pkg/oauth2/oauth2"
+    },
+    "object-storage": {
+      "version": "1.0.0",
+      "description": "ExternalBlob type alias and file metadata validation",
+      "path": "packages/object-storage",
+      "import": "mo:pkg/object-storage/object-storage"
+    },
+    "ipfs": {
+      "version": "1.0.0",
+      "description": "IPFS CID validation and gateway URL builder",
+      "path": "packages/ipfs",
+      "import": "mo:pkg/ipfs/ipfs"
+    },
+    "image-meta": {
+      "version": "1.0.0",
+      "description": "MIME sniff from bytes and upload size validation",
+      "path": "packages/image-meta",
+      "import": "mo:pkg/image-meta/image-meta"
+    },
+    "vetkeys": {
+      "version": "1.0.0",
+      "description": "vetKD encrypt/decrypt request types and validation",
+      "path": "packages/vetkeys",
+      "import": "mo:pkg/vetkeys/vetkeys"
+    },
+    "ckbtc": {
+      "version": "1.0.0",
+      "description": "ckBTC satoshi conversion and address validation",
+      "path": "packages/ckbtc",
+      "import": "mo:pkg/ckbtc/ckbtc"
     }
   }
 }

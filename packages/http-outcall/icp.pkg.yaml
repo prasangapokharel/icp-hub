@@ -1,0 +1,7 @@
+name: http-outcall
+version: 1.0.0
+description: HTTP outcall request types, headers, and size limits
+maintainer: prasangapokharel
+install: pkg/http-outcall
+files:
+  - http-outcall.mo

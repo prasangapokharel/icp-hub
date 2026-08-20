@@ -1,0 +1,7 @@
+name: gemini
+version: 1.0.0
+description: Google Gemini API URL and prompt body helpers
+maintainer: prasangapokharel
+install: pkg/gemini
+files:
+  - gemini.mo

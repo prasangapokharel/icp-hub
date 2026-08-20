@@ -1,0 +1,7 @@
+name: email
+version: 1.0.0
+description: Transactional email types and message validation
+maintainer: prasangapokharel
+install: pkg/email
+files:
+  - email.mo

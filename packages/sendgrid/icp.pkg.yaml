@@ -1,0 +1,7 @@
+name: sendgrid
+version: 1.0.0
+description: SendGrid API payload and auth helpers
+maintainer: prasangapokharel
+install: pkg/sendgrid
+files:
+  - sendgrid.mo

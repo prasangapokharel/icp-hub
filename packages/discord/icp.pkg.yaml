@@ -1,0 +1,7 @@
+name: discord
+version: 1.0.0
+description: Discord webhook URL validation and embed payload builder
+maintainer: prasangapokharel
+install: pkg/discord
+files:
+  - discord.mo

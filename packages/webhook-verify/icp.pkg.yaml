@@ -1,0 +1,7 @@
+name: webhook-verify
+version: 1.0.0
+description: Webhook signature header names and timing-safe compare
+maintainer: prasangapokharel
+install: pkg/webhook-verify
+files:
+  - webhook-verify.mo

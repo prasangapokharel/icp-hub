@@ -1,0 +1,7 @@
+name: anthropic
+version: 1.0.0
+description: Anthropic Claude API config and message body builders
+maintainer: prasangapokharel
+install: pkg/anthropic
+files:
+  - anthropic.mo

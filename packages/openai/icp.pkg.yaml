@@ -1,0 +1,7 @@
+name: openai
+version: 1.0.0
+description: OpenAI API config, chat types, and JSON body builders
+maintainer: prasangapokharel
+install: pkg/openai
+files:
+  - openai.mo

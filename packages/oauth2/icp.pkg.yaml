@@ -1,0 +1,7 @@
+name: oauth2
+version: 1.0.0
+description: Generic OAuth2 grant types and redirect URI helpers
+maintainer: prasangapokharel
+install: pkg/oauth2
+files:
+  - oauth2.mo

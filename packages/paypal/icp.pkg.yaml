@@ -1,0 +1,7 @@
+name: paypal
+version: 1.0.0
+description: PayPal order types and validation helpers
+maintainer: prasangapokharel
+install: pkg/paypal
+files:
+  - paypal.mo
