@@ -215,6 +215,13 @@
       "import": "mo:pkg/ledger/ledger",
       "tier": "L2"
     },
+    "ckbtc": {
+      "version": "2.0.0",
+      "description": "ckBTC token ref, satoshi math, and address validation",
+      "path": "packages/ckbtc",
+      "import": "mo:pkg/ckbtc/ckbtc",
+      "tier": "L2"
+    },
     "escrow": {
       "version": "1.0.0",
       "description": "Hold/release payment pattern",
